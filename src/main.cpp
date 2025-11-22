@@ -11,15 +11,15 @@ int main() {
         const int width = 1024;
         const int height = 1024;
 
-        Model model("models/african_head.obj");
+        Model model("models/Sponsa.obj");
 
-        Camera camera({0.f, 0.1f, 4.2f},
-                      {0.f, 0.f, 0.f},
+        Camera camera({0.f, 10.1f, 1.f},
+                      {0.f, -20.f, 0.f},
                       {0.f, 1.f, 0.f},
                       45.f,
                       static_cast<float>(width) / static_cast<float>(height),
                       0.1f,
-                      10.f);
+                      20.f);
 
         Mat4f model_matrix = Mat4f::translation({0.f, -0.05f, 0.f}) *
                              Mat4f::scale({1.4f, 1.4f, 1.4f});
